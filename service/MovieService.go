@@ -77,5 +77,6 @@ func (ms *MovieService) UpdateMovie(id int, movie model.Movie) error {
 	if errors.Is(err, repository.ErrMovieNotFound) {
 		return ErrMovieNotFound
 	}
+
 	return nil
 }
